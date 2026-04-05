@@ -1,0 +1,147 @@
+/*Last updated 4/4/26 by catsmapschaos*/
+/*Inspecting this site? Customize the variables to colors you prefer.*/
+:root{
+    /*Recolor Text Elements*/
+    --title-color: black;
+    --header-color: green;
+    --font-color: rgba(198, 198, 198, 0.801);
+    --footer-text-color: white;
+
+    /*Recolor Links*/
+    --link-color: rgb(29, 194, 0);
+    --link-hover-color: rgb(119, 41, 178);
+
+    /*Recolor Backgrounds*/
+    --header-nav-footer-buttons-color: rgba(211, 209, 209, 0.724); 
+    --body-background-color: rgb(0, 0, 0);
+    --outer-background-color: rgb(68, 0, 103);
+    --border-color: rgb(0, 0, 0);
+    --text-selection-background-color: rgb(102, 1, 142);
+    --text-selection-color: white;
+}
+/*css refresh*/
+body, ul, li, h1, h2, h3, h4, h5, h6, div, a, img, footer{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace 
+}
+
+.container{
+    background-color: var(--body-background-color);
+    padding: 20px;
+    color: var(--font-color);
+    border-radius: 0px 0px 15px 15px;
+    display: table-cell;
+}
+
+.floatmenu{
+    display: table;
+    height: auto;
+    float: left;
+    background-color: var(--header-nav-footer-buttons-color);
+    padding: 5px;
+    border-right: 5px solid var(--header-nav-footer-buttons-color);
+    border-radius: 0px 0px 0px 15px
+}
+
+.floatmenu li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+::selection{
+    color: var(--text-selection-color);
+    background: var(--text-selection-background-color);
+}
+
+.mainbg{
+    background-color: var(--outer-background-color);
+    padding: 10px
+}
+
+.border{
+    border-radius: 25px;
+    border: 20px var(--border-color);
+    border-style: ridge solid solid ridge;
+    display: flex;
+}
+
+.corners{
+    background-color: var(--border-color);
+}
+
+header{
+    background-color: var(--header-nav-footer-buttons-color);
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+header h1{
+    display: inline-block;
+    color: var(--title-color);
+    padding: 6px 0px 20px;
+}
+
+.background{
+    background-color: var(--background-color);
+}
+
+.glossheader{
+    font-weight: bold;
+    padding: 5px;
+}
+
+.glosssubheader{
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.glossitem{
+    margin-left: 15px;
+}
+
+.glosssubitem{
+    margin-left: 30px;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer{
+    color: var(--footer-text-color);
+    text-align: center;
+}
+
+a:hover{
+    color: var(--link-hover-color);
+}
+
+h2, h3{
+    color: var(--header-color);
+    border-bottom: ridge 5px var(--header-color);
+    border-radius: 15%;
+    display: inline;
+}
+
+hr{
+    color: var(--text-selection-background-color);
+}
+
+p{
+  line-height: 1.5;  
+}
+
+blockquote{
+    background-color: var(--text-selection-background-color);
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
