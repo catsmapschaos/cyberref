@@ -1,0 +1,109 @@
+<!--Welcome to the Cyber Reference Manual.-->
+<!DOCTYPE html><html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://cyberref.org/resources/img/sc2.png" />
+    <meta property="og:image:width" content="356" />
+    <meta property="og:image:height" content="356" />
+    <meta name="description" content="Learn about ssh from CyberRef.org, your free reference for cyber tools, sites, and more.">
+    <meta name="keywords" content="ssh, cyberref, cyberref.org, cyber reference manual, cybersecurity guides, cybersecurity tools reference, information security guides, secure my computer, secure my devices, malware analysis, osint, catsmapschaos, hackthebox write-ups, tryhackme write-ups, hackthebox guides, tryhackme guides">
+    <title>ssh @ CyberRef</title>
+	<link rel="icon" type="image/x-icon" href="resources/img/favicon.ico"/>
+</head>
+    <body>
+        <div class="mainbg">
+            <div class="border">
+                <div class="corners">
+                    <header>
+                        <h1>~/CyberRef$</h1>
+                        <hr class="titlehr">
+                    </header>
+                        <div class="floatmenu">
+                        <nav>
+                            <ul>
+                                <details>
+                                    <summary class="glossheader">All Tools</summary>
+                                        <li class="glosssubitem"><a class="menulink" href="/ref/ssh.html">ssh</a></li>
+                                </details>
+                                <details>
+                                    <summary class="glossheader">By Category</summary>
+                                    <details>
+                                        <summary class="glosssubheader">Network</summary>
+                                        <li class="glosssubitem"><a class="menulink" href="/ref/ssh.html">ssh</a></li>
+                                    </details>
+                                    <details>
+                                        <summary class="glosssubheader">OSINT</summary>
+                                        <li class="glosssubitem">Placeholder 1</li>
+                                    </details>
+                                </details>
+                                <details>
+                                    <summary class="glossheader">Guides</summary>
+                                    <details>
+                                        <summary class="glosssubheader">General</summary>
+                                        <li class="glosssubitem">Placeholder 1</li>
+                                    </details>
+                                    <details>
+                                        <summary class="glosssubheader">Defense</summary>
+                                        <li class="glosssubitem">Placeholder 1</li>
+                                    </details>
+                                    <details>
+                                        <summary class="glosssubheader">Offensive</summary>
+                                        <li class="glosssubitem">Placeholder 1</li>
+                                    </details>
+                                </details>
+                                <details>
+                                    <summary class="glossheader">HackTheBox</summary>
+                                    <li class="glossitem">HTB Write-Ups</li>
+                                </details>
+
+                                <details>
+                                    <summary class="glossheader">TryHackMe</summary>
+                                    <li class="glossitem">THM Write-Ups</li>
+                                </details>
+                            </ul>
+                        </nav>
+                        </div>
+                        <!-- Start of content -->
+                            <div class="container">
+                            <main>
+                                <h1>Secure Shell (SSH)</h1>
+                                <p>The secure shell (SSH) protocol was originally invented by Tatu Ylonen. It is wildly popular today and used to securely connect to remote systems over port 22.</p> 
+                                <div class="codeblock">
+                                    <p>Ylonen was inspired to create the protocol after a password sniffer siphoned up unencrypted login credentials from the Finnish University network back in 1995!</p>
+                                </div>
+                                <p>You may read more about the history of this protocol at ssh.com.</p>
+                                <h2>Generating a Key Pair</h2>
+                                <p>The command <span class="codeblock">ssh-keygen</span> will generate a key pair. It is extremely important to keep track of your key pairs.</p>
+                                <p>You may further specify the algorithm using -t, key size using -b, passphrase (optional) using -N, and file using -f. If you use a passphrase, it will encrypt your private key on your device and you will need to enter the passphrase when using your key. Here's a basic example of generating a ssh key pair using the recommended Elliptic Curve Digital Signature Algorithm with 512 bits:</p> 
+                                    <div class="codeblock">
+                                    <p>ssh-keygen -t ecdsa -b 512 -N myT0t@lly_S3cure-K3yLo1 -f yourKeyFile</p>
+                                    </div>
+                                </p>
+                                <h2>Connecting with SSH</h2>
+                                <p>Although ssh permits connecting with a traditional password, using a key pair is much safer. To do this, first you need to upload your public key (which will end in .pub) to the remote host.</p>
+                                    <div class="codeblock">
+                                    <p>ssh-copy-id -i yourKeyFile.pub yourUsername@remoteHost</p>
+                                    </div>
+                                <p>Afterwards, you may simply connect by running:</p>
+                                    <div class="codeblock">
+                                    <p>ssh -i yourKeyFile yourUsername@remoteHost</p>
+                                    </div>
+                                <p>As a more tangible demonstration, here's an example highlighting pwn.college:</p>
+                                    <div class="codeblock">
+                                    <p>ssh -i yourPwnCollegeKey hacker@dojo.pwn.college</p>
+                                    </div>
+                                    <p>If you set a passphrase, you will also be prompted for it as well. When connecting to a remote host, it is checking your private key against the public (.pub) key you provided.</p>
+                                <h3>References</h3>
+                                <p>https://www.ssh.com/academy/ssh</p>
+                                <p>https://www.ssh.com/academy/ssh/keygen</p>
+                                <p>https://linuxize.com/post/ssh-copy-id-command/</p>
+                            </main>
+                            </div>
+                    </div>
+            </div>
+        <p class="footer">Page Last Updated: 04/08/2026<br>Email: <a href="mailto:catsmapschaos@pm.me" target="_blank" rel="noopener noreferrer">catsmapschaos@pm.me</a><br>Discord: <strong>@catsmapschaos</strong><br>GitHub: <a href="https://github.com/catsmapschaos/cyberref">catsmapschaos</a></p>
+        </div>
+    </body>
+</html>

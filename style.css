@@ -10,6 +10,7 @@
     /*Recolor Links*/
     --link-color: rgb(29, 194, 0);
     --link-hover-color: rgb(119, 41, 178);
+    --menu-link-color: black;
 
     /*Recolor Backgrounds*/
     --header-nav-footer-buttons-color: rgba(211, 209, 209, 0.724); 
@@ -150,4 +151,19 @@ blockquote{
     background-color: var(--text-selection-background-color);
     border-radius: 10px 10px 10px 10px;
     padding: 10px;
+}
+
+.menulink{
+    color: var(--link-color);
+    background-color: var(--body-background-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.codeblock{
+    background-color: var(--header-nav-footer-buttons-color);
+    color: var(--title-color);
+    font-weight: bold;
+    border: 5px solid var(--hrborder);
+    text-align: center;
 }
