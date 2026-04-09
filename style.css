@@ -159,8 +159,8 @@ blockquote{
 }
 
 .codeblock{
-    background-color: var(--header-nav-footer-buttons-color);
-    color: var(--title-color);
+    background-color: var(--body-background-color);
+    color: var(--footer-text-color);
     font-weight: bold;
     border: 2px solid var(--link-color);
     text-align: center;
