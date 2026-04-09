@@ -37,7 +37,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6, div, a, img, footer{
 }
 
 .floatmenu{
-    display: table;
+    display: flex;
     height: auto;
     float: left;
     background-color: var(--header-nav-footer-buttons-color);
@@ -130,8 +130,8 @@ a:hover{
 
 h2, h3{
     color: var(--header-color);
-    border-bottom: ridge 5px var(--header-color);
-    border-radius: 15%;
+    border: 2px solid var(--link-color);
+    padding: 5px;
     display: inline;
 }
 
@@ -164,6 +164,6 @@ blockquote{
     background-color: var(--header-nav-footer-buttons-color);
     color: var(--title-color);
     font-weight: bold;
-    border: 5px solid var(--hrborder);
+    border: 2px solid var(--link-color);
     text-align: center;
 }
