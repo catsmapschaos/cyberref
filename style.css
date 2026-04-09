@@ -164,4 +164,5 @@ blockquote{
     font-weight: bold;
     border: 2px solid var(--link-color);
     text-align: center;
+    padding: 2px;
 }
