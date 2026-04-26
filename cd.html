@@ -7,9 +7,9 @@
     <meta property="og:image" content="https://cyberref.org/resources/img/sc2.png" />
     <meta property="og:image:width" content="356" />
     <meta property="og:image:height" content="356" />
-    <meta name="description" content="CyberRef.org, your free reference for cyber tools, sites, and more.">
-    <meta name="keywords" content="cyberref, cyberref.org, cyber reference manual, cybersecurity guides, cybersecurity tools reference, information security guides, secure my computer, secure my devices, malware analysis, osint, catsmapschaos, hackthebox write-ups, tryhackme write-ups, hackthebox guides, tryhackme guides">
-    <title>CyberRef</title>
+    <meta name="description" content="Learn about cd from CyberRef.org, your free reference for cyber tools, sites, and more.">
+    <meta name="keywords" content="cd, cyberref, cyberref.org, cyber reference manual, cybersecurity guides, cybersecurity tools reference, information security guides, secure my computer, secure my devices, malware analysis, osint, catsmapschaos, hackthebox write-ups, tryhackme write-ups, hackthebox guides, tryhackme guides">
+    <title>cd @ CyberRef</title>
 	<link rel="icon" type="image/x-icon" href="resources/img/favicon.ico"/>
 </head>
     <body>
@@ -75,30 +75,37 @@
                         <!-- Start of content -->
                             <div class="container">
                             <main>
-                                <h1>Cyber Reference Manual</h1>
-                                <p>This site serves as a reference for various cybersecurity tools, websites, and offers some guides. This site is for educational purposes.</p>
-                                <h2>About and Contact</h2>
-                                <p>I love cats, maps, and chaos. If you too enjoy any of those things, we should talk. Add <strong>@catsmapschaos</strong> on Discord or send an email to: <a href="mailto:catsmapschaos@pm.me" target="_blank" rel="noopener noreferrer">catsmapschaos@pm.me</a> where you may request Signal.</p>
-                                <p>Likewise if you want to discuss anything about this website or want to report a bug, reach out.</p>
-                                <h2>Disclaimer and Bugs</h2>
-                                <p>Everything on this website is provided as-is. I do my best to credit fellow researchers when showcasing their tools or their public methodologies. There still may be mistakes. As time progresses, content may become outdated. Any content on this website you may follow at your own risk. <strong>You take full responsibility for your actions.</strong> Ensure you have proper scope and authorization with everything you do.</p>
-                                <p>If you notice a bug on this website, whether it's a typo, misconfiguration, dead link, formatting quirk, etc., reach out to me. I'll put you on a dedicated credits page.</p>
-                                <p>Without further ado, feel free to explore the site! If you're new, here's some friendly unsolicited advice:</p>
-                                <h2>Gain a Solid Foundation</h2>
-                                <p>Having a strong understanding of how operating systems work, how networks operate, and how systems and applications interact will help significantly. Pace yourself, and it helps to be on the journey with others too.</p>
-                                <h3>Read Books and Blogs</h3>
-                                <p>There is nothing in this field you cannot learn for free online through publicly available resources. There are several excellent books and cyber blogs as well.</p>
-                                <h3>Practice Hands-on Skills</h3>
-                                <p>One free resource I routinely recommend is <a href="https://pwn.college" target="_blank" rel="noopener noreferrer">pwn.college</a> which is hosted by Arizona State University. It is also worth starting your own personal project or research, as you will learn much more this way. If you have no clue where to start, look at spinning up virtual machines and create an internal lab to experiment with.</p>
-                                <h3>See What's Out There</h3>
-                                <p>There are so many various career pathways in cyber other than the typical blue and red team roles. <a href="https://niccs.cisa.gov/tools/cyber-career-pathways-tool" target="_blank" rel="noopener noreferrer">CISA's Cyber Career Pathways Tool</a> is an excellent resource for seeing what's out there.</p>
-                                <h3>Be Curious and Think Outside of the Box</h3>
-                                <p>Curiosity and creativity are crucial traits in this field. If you don't particularly enjoy one sector of cyber, don't torture yourself. There's a massive world out there to explore.</p>
+                                <h1>cd</h1>
+                                <p>cd, short for change directory, is crucial to master as it is how you will primarily traverse through your file system!</p> 
+                                <div class="codeblock">
+                                    <p>Tip: cd ~ will always take you back to your home directory, and use quotes "" to navigate to directories with spaces in their names.</p>
+                                </div>
+                                <br>
+                                <h2>Changing Directories</h2>
+                                <p>Use cd to swap directories. The syntax is typically: cd pathToDirectory, such as:</p>
+                                <div class="codeblock">
+                                    <p>cd /var/tmp</p>
+                                </div>
+                                <p>The above command would move your terminal into the tmp directory inside of var.</p>
+                                <h2>Navigating Up Directories</h2>
+                                <p>You may <span class="codeblock">cd ..</span> to "move up" one directory. If we used cd .. after the above example, we would subsequently be in the var directory instead of tmp. You can even move up multiple directories at once:</p>
+                                <div class="codeblock">
+                                    <p>cd ../..</p>
+                                </div>
+                                <br>
+                                <h2>Straight to the Root</h2>
+                                <p>Lastly, you may jump straight to the root of your filesystem with:
+                                    <div class="codeblock">
+                                        <p>cd /</p>
+                                    </div>
+                                </p>
+                                <h3>Reference</h3>
+                                <p>https://www.commandinline.com/cheat-sheet/cd/</p>
                             </main>
                             </div>
                     </div>
             </div>
-        <p class="footer">Page Last Updated: 04/04/2026<br>Email: <a href="mailto:catsmapschaos@pm.me" target="_blank" rel="noopener noreferrer">catsmapschaos@pm.me</a><br>Discord: <strong>@catsmapschaos</strong><br>GitHub: <a href="https://github.com/catsmapschaos/cyberref">catsmapschaos</a></p>
+        <p class="footer">Page Last Updated: 04/25/2026<br>Email: <a href="mailto:catsmapschaos@pm.me" target="_blank" rel="noopener noreferrer">catsmapschaos@pm.me</a><br>Discord: <strong>@catsmapschaos</strong><br>GitHub: <a href="https://github.com/catsmapschaos/cyberref">catsmapschaos</a></p>
         </div>
     </body>
 </html>
